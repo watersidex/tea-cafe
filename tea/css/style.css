@@ -1,0 +1,645 @@
+body {
+  background-color: darkseagreen;
+  color: darkseagreen;
+  cursor: url('../img/hand.cur'), auto;
+  text-shadow: 0 0 1px greenyellow;
+  font-size: 25px;
+}
+
+.walpers {
+  background-image: url(../img/greenWalpers.webp);
+}
+
+.greaen {
+  background-image: url(../img/greEnwal.jpg);
+}
+
+hr {
+  border: 1px solid darkseagreen;
+}
+
+.cupCakes {
+  background-image: url(../img/cupCakes.jpg);
+}
+
+.coffee {
+  z-index: 3;
+  position: relative;
+  right: 416px;
+  bottom: 84px;
+}
+
+.green {
+  background-image: url(../img/green.jpg);
+  cursor: url('../img/hand.cur'), auto;
+}
+
+.fix {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  position: absolute;
+  justify-content: center;
+  left: 5%;
+  top: 25%;
+  width: 20%;
+}
+
+.first {
+  left: 27%;
+}
+
+.second {
+  left: 53%;
+}
+
+.clean {
+  left: 75%;
+}
+
+.baristaNeeds {
+  position: absolute;
+  top: 140px;
+  z-index: 4;
+  right: 64px;
+  top: 150px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 23px;
+  border-radius: 15px;
+  transform: scale(0.7);
+  transition: all 0.5s ease;
+  border: 15px solid #F4F6F7;
+  background-color: #fff;
+  cursor: url(../img/hand.cur), auto;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+
+}
+
+.disabled {
+  display: none;
+}
+
+.disabled+label {
+  display: inline-block;
+}
+
+.disabled+label:before,
+.disabled+label:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.disabled+label:before {
+  left: 0;
+  top: 8px;
+  width: 45px;
+  height: 25px;
+  background-color: #ccc;
+  display: none;
+  border-radius: 12px;
+}
+
+.disabled:checked+label:before {
+  background-color: #FAD7A0;
+  border: 15px solid #F8C471;
+}
+
+.disabled+label:after {
+  transition: all 0.5s;
+  left: 3px;
+  top: 10px;
+  width: 21px;
+  display: none;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.disabled:checked+label:after {
+  left: 22px;
+}
+
+label {
+  box-sizing: border-box;
+}
+
+.baristaNeeds:hover {
+  transform: scale(0.8);
+}
+
+.miod {
+  position: absolute;
+  width: 127px;
+  color: #fff;
+  text-shadow: 0 0 2px black;
+  height: 151px;
+  left: 332px;
+  top: 132px;
+  background-image: url(../img/honey.png);
+}
+
+#honey:checked~.cup-wrap::after {
+  content: "";
+  width: 40px;
+  height: 135px;
+  left: -3px;
+  bottom: -3px;
+  transform: rotate(-15deg);
+  position: absolute;
+  background-size: 40px 135px;
+  background-repeat: no-repeat;
+  background-image: url(../img/honeey.png);
+}
+
+.disabled:checked+label {
+  background-color: #FAD7A0;
+  border: 15px solid #F8C471;
+}
+
+.subReg {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  width: 20%;
+  margin: 10px;
+  transition: all 1s ease;
+  border-radius: 20px;
+  cursor: url('../img/hand.cur'), auto;
+  border: 5px solid #fff;
+  background-color: darkseagreen;
+}
+
+.subReg:hover {
+  cursor: url('../img/hand.cur'), auto;
+  color: darkseagreen;
+  background-color: #fff;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+}
+
+.sub {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  left: -358px;
+  top: 314px;
+  color: #fff;
+  z-index: 6;
+  width: 20%;
+  transition: all 1s ease;
+  border-radius: 20px;
+  cursor: url(../img/hand.cur), auto;
+  border: 5px solid #fff;
+  background-color: darkseagreen;
+}
+
+.email {
+  padding: 5px;
+  margin: 15px;
+}
+
+.lemonAdd {
+  position: absolute;
+  width: 121px;
+  height: 140px;
+  top: 141px;
+  text-shadow: 0 0 2px black;
+  color: #fff;
+  right: 277px;
+  background-image: url(../img/lemonAdd.png);
+}
+
+#lemon:checked~.cup-wrap .water {
+  background-position: bottom -9px right -5px;
+  background-image: url(../img/lemons.png);
+  background-repeat: no-repeat;
+}
+
+.teaBags {
+  width: 136px;
+  height: 132px;
+  color: #000;
+  text-shadow: 0 0 2px black;
+  background-image: url(../img/teaBags.png);
+}
+
+.kettle {
+  position: absolute;
+  width: 102px;
+  height: 121px;
+  right: -45px;
+  outline: none;
+  border: none;
+  background: none;
+  z-index: 4;
+}
+
+.checkKettle {
+  display: none;
+}
+
+.checkKettle~.cup-wrap .water {
+  height: 0;
+  background-color: #B2EBF2;
+  transition: all 1s ease-out;
+}
+
+.checkKettle:checked~.cup-wrap .water {
+  height: 90px;
+}
+
+.subGlass {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: #57513c;
+  border: 5px solid #3e3927;
+}
+
+.barista {
+  position: relative;
+}
+
+.tamara {
+  position: absolute;
+  bottom: 5px;
+  left: -53px;
+}
+
+.table {
+  position: relative;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+}
+
+.wanted {
+  position: absolute;
+  width: 200px;
+  right: 6px;
+  top: 6px;
+}
+
+.wWanted {
+  position: absolute;
+  width: 200px;
+  left: 6px;
+  top: 6px;
+}
+
+.baristaa,
+.washeer {
+  display: none;
+}
+
+.washeer:checked+label::before,
+.baristaa:checked+label::before {
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 5px 6px black);
+}
+
+.baristaa+label:before,
+.baristaa+label:after,
+.washeer+label:before,
+.washeer+label:after {
+  content: "";
+  display: inline-block;
+  transition: all 0.5s ease;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.baristaa+label::before {
+  width: 200px;
+  height: 235px;
+  cursor: url(../img/hand.cur);
+  background-image: url(../img/washerWant.png);
+}
+
+.washeer+label::before {
+  width: 200px;
+  height: 235px;
+  cursor: url(../img/hand.cur);
+  background-image: url(../img/baristaWant.png);
+}
+
+.orders {
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 207px;
+  height: 252px;
+  margin: 0;
+  position: absolute;
+  left: 58px;
+  top: 172px;
+  z-index: 5;
+}
+
+.subGlass::before {
+  content: '';
+  position: absolute;
+  border-radius: 4px 0 0 4px;
+  width: 14px;
+  right: 100%;
+  top: calc(50% - 4.5px);
+  height: 9px;
+  background-color: #3e3927;
+}
+
+.first .subGlass::before {
+  background-color: #57513c;
+}
+
+.second .subGlass::before {
+  background-color: #78725c;
+}
+
+.clean .subGlass::before {
+  background-color: #c7c6c4;
+}
+
+.first .subGlass {
+  background-color: #78725c;
+  border-color: #57513c;
+}
+
+.second .subGlass {
+  background-color: #a5a39a;
+  border-color: #78725c;
+}
+
+.clean .subGlass {
+  background-color: #fff;
+  border-color: #c7c6c4;
+}
+
+.dishWrapper {
+  position: relative;
+}
+
+.wallets {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 145px;
+}
+
+.wallets p {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 2px black;
+}
+
+.girls,
+.boys {
+  display: none;
+}
+
+.boys:checked+label::before,
+.girls:checked+label::before {
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 5px 6px darkseagreen);
+}
+
+.girls+label:before,
+.girls+label:after,
+.boys+label:before,
+.boys+label:after {
+  content: "";
+  display: inline-block;
+  transition: all 0.5s ease;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.girls+label::before {
+  width: 150px;
+  height: 98px;
+  cursor: url(../img/hand.cur);
+  background-image: url(../img/walletPink.png);
+}
+
+.boys+label::before {
+  width: 165px;
+  height: 98px;
+  cursor: url(../img/hand.cur);
+  background-image: url(../img/guesss.png);
+}
+
+.work {
+  color: darkseagreen;
+  border: none;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.work:hover {
+  filter: drop-shadow(0px 5px 6px darkseagreen);
+}
+
+.logo {
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  cursor: url('../img/hand.cur'), auto;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+}
+
+.dish {
+  cursor: url('../img/sponge.cur'), auto;
+  width: 100%;
+}
+
+.gran {
+  background-image: url(../img/gran.jpgn);
+}
+
+.wrapper {
+  margin: 0 auto;
+  color: darkseagreen;
+  cursor: url('../img/hand.cur'), auto;
+  font-family: 'Updock', cursive;
+  padding: 50px;
+  width: 50%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: white;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+}
+
+.cup-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  top: 11px;
+  left: 107px;
+}
+
+.cup-wrap:before {
+  content: "";
+  position: absolute;
+  left: calc(100% - 3px);
+  top: 30px;
+  width: 10px;
+  height: 25px;
+  border: 3px solid #000;
+  border-radius: 0 10px 100% 0;
+}
+
+.card {
+  cursor: url('../img/card.cur'), auto;
+
+}
+
+.office {
+  background-image: url(../img/officee.jpg);
+}
+
+.blik {
+  cursor: url('../img/blik.cur'), auto;
+
+}
+
+.anna {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+.lemonade {
+  position: absolute;
+  bottom: -5px;
+  right: -1px;
+  z-index: 3;
+}
+
+.cupp {
+  position: relative;
+  top: 4px;
+  display: flex;
+  align-items: flex-end;
+  width: 60px;
+  height: 100px;
+  border: 3px solid #000;
+  border-top: 1px dotted;
+  border-radius: 0 0 15px 15px/ 0 0 50px 50px;
+  overflow: hidden;
+}
+
+.water {
+  width: 100%;
+}
+
+.menu {
+  content: "";
+  position: absolute;
+  width: 116px;
+  border: 15px solid #fff;
+  border-radius: 15px;
+  height: 157px;
+  top: 15px;
+  right: 15px;
+  cursor: url('../img/hand.cur'), auto;
+  background-image: url(../img/menuLit.png);
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+}
+
+.terminal {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+}
+
+.cup {
+  right: 155px;
+  cursor: url('../img/hand.cur'), auto;
+  background-image: url(../img/tea.jpg);
+}
+
+.menuChange {
+  padding: 500px 0;
+  cursor: url('../img/hand.cur'), auto;
+  background: url(../img/menu.png) no-repeat center /contain;
+}
+
+.subTea {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  width: 20%;
+  margin: 10px;
+  transition: all 1s ease;
+  border-radius: 20px;
+  cursor: url('../img/hand.cur'), auto;
+  border: 5px solid #fff;
+  background-color: darkseagreen;
+}
+
+.subTea:hover {
+  cursor: url('../img/hand.cur'), auto;
+  color: darkseagreen;
+  background-color: #fff;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+}
+
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 50%;
+  /* Full-width */
+  cursor: url('../img/hand.cur'), auto;
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  cursor: url('../img/hand.cur'), auto;
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  cursor: url('../img/hand.cur'), auto;
+  height: 25px;
+  /* Slider handle height */
+  background: darkseagreen;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  cursor: url('../img/hand.cur'), auto;
+  height: 25px;
+  /* Slider handle height */
+  background: darkseagreen;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
